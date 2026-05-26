@@ -18,10 +18,8 @@ for employee_number in range(1, 4):
     print(f"--- Đang xử lý nhân viên số {employee_number} ---")
     working_days = int(input("Nhập số ngày công trong tháng: "))
     if working_days == 0:
-        print(">> CẢNH BÁO: Nhân viên nghỉ cả tháng. Không xét duyệt thưởng.")
+        print("CẢNH BÁO: Nhân viên nghỉ cả tháng. Không xét duyệt thưởng.")
         continue 
     bonus_amount = working_days * 200000
-    print(f"-> Đã tự động gửi Email: 'Chúc mừng nhận được {bonus_amount} VNĐ tiền thưởng!'")
-    print("-" * 50 + "\n")
-
+    print(f" Đã tự động gửi Email: 'Chúc mừng nhận được {bonus_amount} VNĐ tiền thưởng!'")
 print("Đã hoàn tất quá trình duyệt thưởng cho 3 nhân viên!")
